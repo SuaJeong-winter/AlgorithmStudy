@@ -1,14 +1,5 @@
-def verification(number):
-    sum=0
-    result=0
-    for i in range(len(number)):
-      sum+=number[i]*number[i]
-    result=sum%10
-    return result
-    
-numberlist=list(map(int,input().split()))
-print(verification(numberlist))
-
-        
-        
-        
+number = list(map(int,input().split()))
+sum = 0
+for num in number:
+    sum+=num*num
+print(sum%10)
