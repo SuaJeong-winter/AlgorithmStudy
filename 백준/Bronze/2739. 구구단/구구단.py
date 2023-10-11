@@ -1,4 +1,3 @@
-num=int(input())
-for i in range(9):
-    result=num*(i+1)
-    print(str(num) +" * " +str(i+1)+" = "+str(result))
+num= int(input())
+for i in range(1,10):
+    print(f"{num} * {i} = {num*i}")
