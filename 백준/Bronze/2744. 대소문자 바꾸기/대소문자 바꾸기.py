@@ -1,6 +1,6 @@
-txt=list(input())
-for i in range(len(txt)):
-    if 65<=ord(txt[i])<=90:
-        print(chr(ord(txt[i])+32), end='')
-    if 97<=ord(txt[i])<=120:
-        print(chr(ord(txt[i])-32), end='')
+word = input()
+for i in range(len(word)):
+    if ord(word[i]) <=90:
+        print(chr(ord(word[i])+32), end="")
+    else:
+        print(chr(ord(word[i])-32), end="")
