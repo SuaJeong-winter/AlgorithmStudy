@@ -1,4 +1,6 @@
-T = int(input())
-for _ in range(T):
-    txt=input()
-    print(txt[0]+txt[-1])
+import sys
+
+t = int(sys.stdin.readline().rstrip())
+for _ in range(t):
+    word=sys.stdin.readline().rstrip()
+    print(word[0]+word[-1])
