@@ -1,12 +1,8 @@
-import sys  
-
-n=int(input())
-a=list(map(int,sys.stdin.readline().split()))
-v=int(input())
-countv=0
-for i in range(n):
-  if (a[i]==v):
-    countv+=1
-  else:
-    pass
-print(countv)
+num=int(input())
+numbers=list(map(int,input().split()))
+target=int(input())
+cnt=0
+for i in numbers:
+    if i==target:
+        cnt+=1
+print(cnt)
