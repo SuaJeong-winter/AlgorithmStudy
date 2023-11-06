@@ -1,3 +1,3 @@
-star=int(input())
-for i in range(star):
-    print(" "*(star-i-1)+"*"*(i+1))
+num=int(input())
+for i in range(1,num+1):
+    print(" "*(num-i)+"*"*i)
