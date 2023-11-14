@@ -1,3 +1,3 @@
-num = int(input())
-for i in range(num, -1, -1):
-    print(i, end=" ")
+num=int(input())
+for number in range(num,-1,-1):
+    print(f"{number}",end=" ")
