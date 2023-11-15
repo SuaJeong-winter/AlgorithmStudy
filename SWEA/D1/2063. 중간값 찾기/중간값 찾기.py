@@ -1,4 +1,4 @@
-N =int(input())
-numlist = list(map(int, input().split()))
-numlist.sort()
-print(numlist[N//2])
+num=int(input())
+numbers=list(map(int,input().split()))
+sort_num=sorted(numbers)
+print(sort_num[num//2])
