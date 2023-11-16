@@ -1,3 +1,3 @@
-sentence = input()
-for i in range (len(sentence)):
-    print(ord(sentence[i])-64, end=" ")
+sentence=input()
+for alpha in sentence:
+    print(f"{ord(alpha)-64}", end=" ")
