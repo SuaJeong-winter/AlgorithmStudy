@@ -1,2 +1,2 @@
-title = input()
+title=input()
 print(title.upper())
