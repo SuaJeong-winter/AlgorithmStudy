@@ -1,3 +1,6 @@
-num= int(input())
-for i in range(num+1):
-    print(2**i, end=" ")
+num=int(input())
+start=1
+for i in range(0,num+1):
+    start=2**i
+    print(start,end=" ")
+
