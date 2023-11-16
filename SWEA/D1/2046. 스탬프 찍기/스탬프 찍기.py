@@ -1,2 +1,3 @@
-num=int(input())
-print("#"*num)
+icon=int(input())
+for _ in range(icon):
+    print('#',end="")
