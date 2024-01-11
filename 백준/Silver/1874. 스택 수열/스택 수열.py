@@ -1,20 +1,22 @@
-n=int(input())
+import sys
 
-count = 1
-stack =[]
-result=[]
+n=int(sys.stdin.readline())
+stack=[]
+answer=[]
+current=1
 
-for i in range(1,n+1):
-    data=int(input())
-    while count<=data:
-        stack.append(count)
-        count+=1
-        result.append('+')
-    if stack[-1] == data:
+for _ in range(n):
+    x=int(sys.stdin.readline())
+    while len(stack)==0 or stack[-1]<x:
+        stack.append(current)
+        current+=1
+        answer.append('+')
+    if stack[-1]==x:
         stack.pop()
-        result.append('-')
+        answer.append('-')
     else:
-        print('NO')
-        exit(0)
-        
-print('\n'.join(result))
+        answer=['NO']
+        break
+for x in answer:
+    print(x)
+    
