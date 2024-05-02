@@ -1,5 +1,10 @@
-a=int(input())
-b=int(input())
-print(a+b)
-print(a-b)
-print(a*b)
+import sys
+
+def solution(a,b):
+    print(a+b)
+    print(a-b)
+    print(a*b)
+
+a=int(sys.stdin.readline())
+b=int(sys.stdin.readline())
+solution(a,b)
