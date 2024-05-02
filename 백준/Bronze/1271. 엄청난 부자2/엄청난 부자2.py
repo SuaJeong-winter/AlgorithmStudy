@@ -1,5 +1,8 @@
-n,m=map(int,input().split())
-coin=n//m
-leftover=n%m
-print(coin)
-print(leftover)
+def solution(coins, creatures):
+    money = int(coins)//int(creatures)
+    leftover = int(coins)%int(creatures)
+    print(money)
+    print(leftover)
+
+coins, creatures = input().split()
+solution(coins, creatures)
