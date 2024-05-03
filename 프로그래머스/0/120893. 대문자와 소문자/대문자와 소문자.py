@@ -1,9 +1,9 @@
 def solution(my_string):
     answer = ''
-    for i in range(len(my_string)):
-        if ord(my_string[i])<91:
-            answer+=chr(ord(my_string[i])+32)
+    for i in my_string:
+        if ord(my_string[i]<91):
+            answer += my_string[i].lower
         else:
-            answer+=chr(ord(my_string[i])-32)
+            answer+=my_string[i].upper
 
     return answer
