@@ -1,3 +1,3 @@
 n=int(input())
-nums=list(map(int,input().split()))
-print(min(nums), max(nums))
+arr = list(map(int,input().split()))
+print(f"{min(arr)} {max(arr)}")
