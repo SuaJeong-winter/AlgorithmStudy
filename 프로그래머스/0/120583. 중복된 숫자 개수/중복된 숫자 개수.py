@@ -1,6 +1,6 @@
 def solution(array, n):
-    answer = 0
-    for i in range(len(array)):
-        if array[i]==n:
-            answer+=1
-    return answer
+    cnt=0
+    for num in array:
+        if num==n:
+            cnt+=1
+    return cnt
