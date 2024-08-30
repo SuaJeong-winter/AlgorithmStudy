@@ -1,14 +1,13 @@
 def solution(array):
-    num_arr = [0]*(max(array)+1)
-    max_cnt=0
-    for i in array:
-        num_arr[i]+=1
-
-    for j in num_arr:
-        if j == max(num_arr):
-            max_cnt +=1
-
-    if max_cnt > 1:
+    cnt_arr=[0]*1000
+    result=0
+    for num in array:
+        cnt_arr[num]+=1
+    max_num=max(cnt_arr)
+    for maxvalue in cnt_arr:
+        if maxvalue == max_num:
+            result+=1
+    if result != 1:
         return -1
     else:
-        return num_arr.index(max(num_arr))
+        return cnt_arr.index(max_num)
