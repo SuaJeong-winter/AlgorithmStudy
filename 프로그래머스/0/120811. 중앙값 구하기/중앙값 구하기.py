@@ -1,7 +1,7 @@
 def solution(array):
-    answer = 0
-    sort_arr = sorted(array)
-    mid_index=len(array)//2
-    answer = sort_arr[mid_index]
-    return answer
+    # 배열을 정렬
+    arr=sorted(array)
+    # 배열의 중앙값 찾기
+    answer=arr[len(array)//2]
 
+    return answer
