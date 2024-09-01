@@ -1,6 +1,9 @@
 def solution(my_string, letter):
-    answer = ''
-    for alpha in my_string:
-        if alpha !=letter:
-            answer+=alpha
+    answer = ""
+    for index in my_string:
+        if letter == index:
+            pass
+        else:
+            answer+= "".join(index)
+
     return answer
