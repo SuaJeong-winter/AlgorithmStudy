@@ -1,9 +1,6 @@
 def solution(n):
-    answer=0
-    for i in range(1,n+1):
-        if i%2==0:
-            answer+=i
-        else:
-            pass
-        
+    answer = 0
+    for num in range(n+1):
+        if num%2==0:
+            answer+=num
     return answer
