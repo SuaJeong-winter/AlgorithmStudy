@@ -1,13 +1,12 @@
 def solution(array):
-    cnt_arr=[0]*1000
-    result=0
+    answer = 0
+    ans_arr=[0]*1000
     for num in array:
-        cnt_arr[num]+=1
-    max_num=max(cnt_arr)
-    for maxvalue in cnt_arr:
-        if maxvalue == max_num:
-            result+=1
-    if result != 1:
-        return -1
+        ans_arr[num]+=1
+    max_num= max(ans_arr)
+    if ans_arr.count(max_num)==1:
+        answer = ans_arr.index(max_num)
     else:
-        return cnt_arr.index(max_num)
+        answer= -1
+
+    return answer
