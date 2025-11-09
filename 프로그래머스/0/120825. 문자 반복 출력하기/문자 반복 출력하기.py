@@ -1,5 +1,5 @@
 def solution(my_string, n):
     answer = ''
     for alpha in my_string:
-        answer+=alpha*n
+        answer+="".join(alpha*n)
     return answer
