@@ -1,7 +1,8 @@
+import math
+
 def solution(n):
-    answer = 1
-    while(1):
-        if (6*answer)%n==0:
-            return answer
-        else:
-            answer+=1
+    gcd_pizza= math.gcd(n,6)
+    total_pizza = (n*6)//gcd_pizza
+    answer = total_pizza//6
+
+    return answer
