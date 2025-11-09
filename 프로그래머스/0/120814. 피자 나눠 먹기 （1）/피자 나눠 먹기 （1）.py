@@ -1,7 +1,7 @@
 def solution(n):
-    answer=1
-    while (1):
-        if n>(7*answer):
-            answer+=1
-        else:
-            return answer
+    answer = 0
+    if n%7==0:
+        answer = n//7
+    else:
+        answer = n//7+1
+    return answer
