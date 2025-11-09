@@ -1,5 +1,7 @@
 def solution(slice, n):
-    if n%slice==0:
-        return n//slice
+    answer = 0
+    if n%slice ==0:
+        answer = n//slice
     else:
-        return n//slice+1
+        answer = n//slice +1
+    return answer
