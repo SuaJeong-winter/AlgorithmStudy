@@ -1,8 +1,9 @@
 def solution(num_list):
-    answer = [0,0]
+    odd,even=0,0
     for num in num_list:
         if num%2==0:
-            answer[0]+=1
+            even+=1
         else:
-            answer[1]+=1
+            odd+=1
+    answer=[even,odd]
     return answer
