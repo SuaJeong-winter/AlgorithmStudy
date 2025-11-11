@@ -1,9 +1,9 @@
 def solution(emergency):
-    answer = [0]*len(emergency)
-    num=1
-    e_arr= sorted(emergency,reverse=True)
-    for order in e_arr:
-        answer[emergency.index(order)]=num
-        num+=1
+    answer = []
+    sorted_emergency = sorted(emergency,reverse=True)
+    for score in emergency:
+        for s_score in sorted_emergency:
+            if score == s_score:
+                answer.append(sorted_emergency.index(score) + 1)
 
     return answer
