@@ -1,6 +1,8 @@
 def solution(hp):
-    big=hp//5
-    medium = (hp%5)//3
-    small = ((hp%5)%3)//1
 
-    return big+medium+small
+    garmy= hp//5
+    sarmy=(hp%5)//3
+    warmy=(hp-(5*garmy+3*sarmy))//1
+    answer = garmy+sarmy+warmy
+
+    return answer
