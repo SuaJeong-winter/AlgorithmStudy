@@ -1,4 +1,5 @@
-from math import comb
+import math
 
 def solution(balls, share):
-    return comb(balls,share)
+    answer = math.comb(balls, share)
+    return answer
