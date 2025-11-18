@@ -1,6 +1,4 @@
 def solution(letter):
-    answer = ''
-    words = letter.split()
     morse = {
         '.-': 'a', '-...': 'b', '-.-.': 'c', '-..': 'd', '.': 'e', '..-.': 'f',
         '--.': 'g', '....': 'h', '..': 'i', '.---': 'j', '-.-': 'k', '.-..': 'l',
@@ -8,7 +6,12 @@ def solution(letter):
         '...': 's', '-': 't', '..-': 'u', '...-': 'v', '.--': 'w', '-..-': 'x',
         '-.--': 'y', '--..': 'z'
     }
-    for alpha in words:
-            answer+="".join(morse[alpha])
+    answer = ''
 
+    answer = ''
+    word = list(letter.split())
+    for alpha in word:
+        answer += morse[alpha]
     return answer
+
+
