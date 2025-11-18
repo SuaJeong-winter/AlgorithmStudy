@@ -1,6 +1,6 @@
 def solution(rsp):
     answer = ''
-    win_rule={'2':'0','0':'5','5':'2'}
-    for utry in rsp:
-        answer+= ''.join(win_rule[utry])
+    win={'2':'0','0':'5','5':'2'}
+    for case in rsp:
+        answer+=win[case]
     return answer
