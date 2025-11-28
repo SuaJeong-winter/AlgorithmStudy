@@ -1,9 +1,11 @@
+#대문자는 소문자로, 소문자는 대문자로
+
 def solution(my_string):
     answer = ''
-    for i in my_string:
-        if ord(my_string[i]<91):
-            answer += my_string[i].lower
+    for alpha in my_string:
+        if ord(alpha)<97:
+            answer+=''.join(alpha.lower())
         else:
-            answer+=my_string[i].upper
-
+            answer+=''.join(alpha.upper())
     return answer
+
