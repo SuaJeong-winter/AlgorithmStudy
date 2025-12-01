@@ -1,6 +1,6 @@
 def solution(array, height):
     answer = 0
-    for num in array:
-        if num>height:
+    for person in array:
+        if person>height:
             answer+=1
     return answer
