@@ -3,7 +3,8 @@
 def solution(num, k):
     answer = -1
     num_list = str(num)
-    k=str(k)
-    if k in num_list:
-        answer=str(num).index(k)+1
+    for number in num_list:
+        if number == str(k):
+            answer = num_list.index(number) + 1
+
     return answer
